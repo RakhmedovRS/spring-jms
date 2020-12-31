@@ -13,6 +13,8 @@ import org.springframework.jms.support.converter.MessageType;
 @Configuration
 public class JmsConfiguration
 {
+	public static String QUEUE_NAME = "queue";
+
 	@Bean
 	public MessageConverter messageConverter()
 	{
