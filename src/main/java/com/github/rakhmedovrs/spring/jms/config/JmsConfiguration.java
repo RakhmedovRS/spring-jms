@@ -13,7 +13,8 @@ import org.springframework.jms.support.converter.MessageType;
 @Configuration
 public class JmsConfiguration
 {
-	public static final String QUEUE_NAME = "queue";
+	public static final String FIRST_QUEUE_NAME = "queue";
+	public static final String SECOND_QUEUE_NAME = "replayQueue";
 
 	@Bean
 	public MessageConverter messageConverter()
